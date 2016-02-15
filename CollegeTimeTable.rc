@@ -1,0 +1,895 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CollegeTimeTable.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CollegeTimeTable.ico"
+IDR_COLLEGTYPE          ICON    DISCARDABLE     "res\\CollegeTimeTableDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\TT-02-Ind-256color.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_ENABLEALLCELLS
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILENU
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_LOAD
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SEV
+        MENUITEM "Save &As...",                 ID_FILE_SEVAS
+        MENUITEM SEPARATOR
+        MENUITEM "Print All Individuals",       ID_FILE_PRINTTYPEINDIVIDUALS
+        MENUITEM "Print All Classes",           ID_FILE_PRINTTYPECLASSES
+        MENUITEM "Print Master",                ID_FILE_PRINTTYPEMASTER
+        MENUITEM "Print Current Display\tCtrl + P", ID_FILE_PRINTCURRENT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Insert Row\tCtrl+Insert",    ID_EDIT_INSERTROW
+        MENUITEM "&Delete Row\tCtrl+Delete",    ID_EDIT_DELETEROW
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Find and Replace\tCtrl+H",    ID_EDIT_FINDANDREPLACE
+        MENUITEM "Select All Cells Containg Given string\tCtrl+J", 
+                                                ID_EDIT_SELECTMAKEBLUECELLSCONTAINGGIVENSTRING
+
+        MENUITEM "Swap Teachers\tCtrl+W",       ID_EDIT_SWAPTEACHERS
+        MENUITEM "Freeze/DeFreeze Current Cell or Selected Cell(s)\tCtrl+D", 
+                                                ID_EDIT_DISABLECELL
+        MENUITEM "Freeze All Cells Containg Given String \tCtrl+M", 
+                                                ID_EDIT_DISABLEMULTIPLECELLS
+        MENUITEM "DeFreeze All Cells Containg Given String\tCrrl+I", 
+                                                ID_EDIT_DEFREEZE_ON_STRING
+        MENUITEM "DeFreeze All Cells\tCtrl+E",  ID_EDIT_ENABLEALLCELLS
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Display Gap Report",          ID_TOOLS_DISPLAYGAPREPORT
+        MENUITEM "Display Clash Report",        ID_TOOLS_DISPLAYCLASHREPORT
+        MENUITEM "Show All Counts\tCtr l+ G",   ID_TOOLS_SHOWALLCOUNTS
+        MENUITEM "Display Next Individual\tCtrl + Dn Arrow", 
+                                                ID_TOOLS_DISPLAYNEXTINDIVIDUAL
+
+        MENUITEM "Display Prev Individual\tCtrl + Up Arrow", 
+                                                ID_TOOLS_DISPLAYPREVINDIVIDUAL
+
+        MENUITEM "Display Next Class\tCtrl + Pg Dn", 
+                                                ID_TOOLS_DISPLAYNEXTCLASS
+        MENUITEM "Display Prev Class\tCtrl + Pg Up", 
+                                                ID_TOOLS_DISPLAYPREVCLASS
+        MENUITEM "Refresh Teacher and Class Lists", 
+                                                ID_TOOLS_REFRESHTEACHERANDCLASSLISTS
+
+        MENUITEM "Auto-Reduce Clashes/Gaps",    ID_TOOLS_AUTOREDUCEGAPS
+        MENUITEM "Time Table Wizard Step I",    ID_TOOLS_TIMETABLEWIZARD
+        MENUITEM "Time Table Wizard Step II",   ID_TOOLS_TIMETABLEWIZARDSTEPII
+
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Set"
+    BEGIN
+        MENUITEM "&College Name",               ID_SET_COLLEGENAME
+        MENUITEM "Full Names",                  ID_SET_FULLNAMES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CollegeTimeTable...",  ID_APP_ABOUT
+        MENUITEM "How To Use Time Table ",      ID_HELP_HOWTOUSETIMETABLE
+        MENUITEM "Show Demo Time Table",        ID_HELP_LOADSAMPETIMETABLE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "D",            ID_EDIT_DISABLECELL,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EDIT_ENABLEALLCELLS, VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_TOOLS_SHOWALLCOUNTS, VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_FINDANDREPLACE, VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_EDIT_DEFREEZE_ON_STRING, VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_DISABLEMULTIPLECELLS, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILENU,              VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_LOAD,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINTCURRENT,   VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SEV,            VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETEROW,      VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_TOOLS_DISPLAYNEXTINDIVIDUAL, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_INSERTROW,      VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_TOOLS_DISPLAYNEXTCLASS, VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_TOOLS_DISPLAYPREVCLASS, VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_TOOLS_DISPLAYPREVINDIVIDUAL, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "W",            ID_EDIT_SWAPTEACHERS,   VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 275, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CollegeTimeTable"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,166,68,20,20
+    LTEXT           "CollegeTimeTable,  Version 2.0",IDC_STATIC,36,10,161,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C),  June 2012, Milind Oka",IDC_STATIC,36,22,
+                    126,8
+    DEFPUSHBUTTON   "Close",IDOK,122,172,50,14,WS_GROUP
+    LTEXT           "Milind Oka,\nMathematics Department\nSIWS College, Wadala.\nMumbai - Pin 400031.\n\nEmails :\noak444@gmail.com\noak444@gmx.com",
+                    IDC_STATIC,35,58,86,68
+    LTEXT           "This program uses GridCtrl  by Chris Maunder, (C) 1998.\nGridCtrl Source is available free on internet under GPL.",
+                    IDC_STATIC,36,35,197,17
+    LTEXT           "Download Free From : https://sites.google.com/site/utilitiesforteachers",
+                    IDC_STATIC,34,129,219,24
+    LTEXT           "* AUTHOR IS NOT RESPONSIBLE FOR ANY LOSS OR DAMAGE",
+                    IDC_STATIC,33,152,214,8
+END
+
+IDD_COLLEGETIMETABLE_FORM DIALOG DISCARDABLE  0, 0, 651, 444
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SEARCHBOX,407,16,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Generate",IDC_GENERATE,354,17,45,14
+    LTEXT           "Individual or Class",IDC_STATIC,395,1,58,8
+    LTEXT           "Type Teacher code or Class and press enter or click generate. Alternatively, just move cell pointer to a relevant cell in the Master.   Pink cell indicates clash.",
+                    IDC_STATIC,460,0,129,36
+    LTEXT           "Clash Count :",IDC_CLASHCOUNT,355,37,56,8
+    LTEXT           "Gap Count :",IDC_GAPCOUNT,434,37,56,8
+    LTEXT           "Double Count :",IDC_DUBCOUNT,509,37,57,8
+END
+
+IDD_COLLEGENAME DIALOG DISCARDABLE  0, 0, 309, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "College Time Table - Enter College Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COLLNAME,76,14,216,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,34,50,14
+    LTEXT           "College Name",IDC_STATIC,17,16,45,8
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 219, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FInd Replace Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FIND,87,14,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_REPLACE,88,38,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,162,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,24,50,14
+    LTEXT           "Find",IDC_STATIC,54,16,14,8
+    LTEXT           "Repalce with",IDC_STATIC,27,40,42,8
+END
+
+IDD_SWAPDLG DIALOG DISCARDABLE  0, 0, 180, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Swap Teachers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEA1,39,26,22,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEA2,113,26,24,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,99,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,19,54,50,14
+    LTEXT           "<------>",IDC_STATIC,78,29,21,8
+    LTEXT           ")",IDC_STATIC,143,29,8,8
+    LTEXT           ")",IDC_STATIC,68,29,8,8
+    LTEXT           "(",IDC_STATIC,27,29,8,8
+    LTEXT           "(",IDC_STATIC,104,28,8,8
+    LTEXT           "Enter Teacher Codes  : ",IDC_STATIC,6,6,76,8
+END
+
+IDD_MULTIDISABLEDLG DIALOG DISCARDABLE  0, 0, 186, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "    String Entry Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MDSTRING,63,32,68,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,63,50,14
+    EDITTEXT        IDC_FRIZMSG,21,13,141,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_CONTINUE DIALOG DISCARDABLE  0, 0, 186, 31
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stop Message"
+FONT 14, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Press Esc To Stop",IDCANCEL,11,7,169,14
+END
+
+IDD_WIZARD1 DIALOG DISCARDABLE  0, 0, 374, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time Table Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEWTIME,24,32,57,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWCLASS,179,32,61,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Next Step -->",IDOK,312,101,55,14
+    PUSHBUTTON      "Cancel Wizard",IDCANCEL,311,70,56,14
+    LTEXT           "Enter Time Slots in ascending order\n(For ex  12:30 - 01:10,1:10-1:50  etc)",
+                    IDC_STATIC,23,7,118,23
+    LTEXT           "Enter  Classes in ascending order\n  (For ex  FY-A, SY-B, SY-C etc)",
+                    IDC_STATIC,179,6,120,20
+    DEFPUSHBUTTON   "Add Slot",IDC_ADDSLOT,90,31,39,14
+    PUSHBUTTON      "Add Class",IDC_ADDCLASS,247,32,50,14
+    LTEXT           "Total Time Slots :",IDC_TOTALTIMESLOTS,24,127,94,8,NOT 
+                    WS_GROUP
+    LTEXT           "Total  Classes :",IDC_TOTALCLASSSLOTS,180,127,94,8,NOT 
+                    WS_GROUP
+    LISTBOX         IDC_TIMESLOT,24,57,105,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CLASSSLOT,179,58,105,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete Selected Slot",IDC_DELETESLOT,25,102,79,13
+    PUSHBUTTON      "Delete Selected Class",IDC_DELETECLASS,180,103,79,13
+END
+
+IDD_WZARD2 DIALOG DISCARDABLE  0, 0, 315, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time Table Wizard : Step 2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SUBTR,51,40,50,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_CLASS,115,40,58,40,CBS_SIMPLE | CBS_SORT | 
+                    CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NOFLECTURES,189,40,23,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_LECTURES,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,222,38,10,14
+    DEFPUSHBUTTON   "Allocate",IDOK,197,65,50,14
+    PUSHBUTTON      "Finish",IDCANCEL,255,65,50,14
+    LTEXT           "Enter Subject  and\nTeacher in the form\n          SUB(TR)\n",
+                    IDC_STATIC,38,8,69,26
+    LTEXT           "Select  Class",IDC_STATIC,121,17,42,8
+    LTEXT           "No. of\nLectures",IDC_STATIC,186,12,33,18
+END
+
+IDD_EXPNAMEDLG DIALOG DISCARDABLE  0, 0, 292, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Expand Teacher Names"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FULLNEM,50,24,204,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHORTNEM,22,24,19,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Finish",IDOK,42,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,50,52,50,14,NOT WS_VISIBLE
+    LTEXT           "TR Code",IDC_STATIC,15,9,30,8
+    LTEXT           "Full Name of the Teacher",IDC_STATIC,64,9,131,8
+    PUSHBUTTON      "Next [Pg Down]",IDC_NEXT,113,51,68,14
+    PUSHBUTTON      "Previous [Pg Up]",IDC_PREV,192,51,66,14
+END
+
+IDD_QUICKSTART DIALOG DISCARDABLE  0, 0, 416, 294
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Quick Start"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         141,IDC_TTFRAME1,"Static",SS_BITMAP,7,16,413,198
+    LTEXT           "1.  Enter timing as shown. Do not write any thing in time row. Write classes in the cells below time cell.",
+                    IDC_STATIC,18,220,376,8
+    LTEXT           "2.  Enter Lectures in the format SUB(TR), 3 letter subject code and 2 letter teacher code.",
+                    IDC_STATIC,18,232,376,8
+    LTEXT           "3.  You need not put brackets. String of 5 characters SUBTR will be autoformated to SUB(TR) after leaving cell. ",
+                    IDC_STATIC,18,242,376,8
+    LTEXT           "4.  Moving the cell pointer to any entry will display teacher time table and moving it to class will display class time table.",
+                    IDC_STATIC,18,253,376,8
+    LTEXT           "5.  Pink cell represents clash. Clash Count is total clashes in Individual time table.",
+                    IDC_STATIC,18,264,391,8
+    LTEXT           "6. Gap Count is total free lectures between first and last lecture and Double Count is pairs of repeated lectures on same day.",
+                    IDC_STATIC,18,276,391,8
+END
+
+IDD_INRODUCTION DIALOG DISCARDABLE  0, 0, 420, 294
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Introduction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "College Time Table",IDC_STATIC,154,19,62,8
+    LTEXT           "College Time Table is a free software utility to create, modify and manage time tables for Schools and Colleges.",
+                    IDC_STATIC,19,37,347,8
+    LTEXT           "--  Features --",IDC_STATIC,164,75,42,8
+    LTEXT           "1.  Simple, Fast,  Accurate. Extremly small size and Portable App.",
+                    IDC_STATIC,21,94,291,8
+    LTEXT           "2.  Starts generating time table instantly and on-the-fly.",
+                    IDC_STATIC,21,107,291,8
+    LTEXT           "3.  Detects clashes and gaps between the letures and removes them automatically.",
+                    IDC_STATIC,21,121,291,8
+    LTEXT           "4.  Detects double lectures and spreads them over the week.",
+                    IDC_STATIC,21,135,291,8
+    LTEXT           "5.  Freezes particular lecture(s), if required, during auto adjustment routine.",
+                    IDC_STATIC,21,148,291,8
+    LTEXT           "6.  Swaps Teachers or Subjects within seconds.",
+                    IDC_STATIC,21,162,291,8
+    LTEXT           "7.  Handles Parallel Lectures and Practicals easily.",
+                    IDC_STATIC,21,175,291,8
+    LTEXT           "8.  Wizard to generate time table from scratch.",
+                    IDC_STATIC,21,188,291,8
+    LTEXT           "9.  Prints all type of reports - Classes, Teachers and Master.",
+                    IDC_STATIC,21,202,291,8
+    LTEXT           "10.  Excellent User Interface.",IDC_STATIC,18,216,291,8
+END
+
+IDD_FILEHELP DIALOG DISCARDABLE  0, 0, 419, 295
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Input Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "After understanding the basic working the next step is to start building the actual time table....",
+                    IDC_STATIC,19,16,383,8
+    LTEXT           "The first difficulty you face is Parallel Lectures and Practicals. When the class is divided into small batches, it is to be",
+                    IDC_STATIC,18,49,383,8
+    LTEXT           "shown in Master as seperate entries. Just enter the parallel lectures in the same cell but seperated by , (comma).",
+                    IDC_STATIC,18,60,383,8
+    LTEXT           "for example  MAT(AB),ECO(CD),BIO(EF)  or enter  MATAB, ECOCD, BIOEF which will be autoformatted with brackets.",
+                    IDC_STATIC,18,72,383,8
+    LTEXT           "Practicals can be entered in the same way for example 3 batches of A div Chemistry practicals can be enterd as ...",
+                    IDC_STATIC,18,90,383,8
+    LTEXT           "CA1(AB), CA2(CD), CA3(EF)  etc..  in the same cell.",
+                    IDC_STATIC,18,102,383,8
+    LTEXT           "Dealing with clashes : The powerful clash removing routine  'Tools-->Auto Reduce Clashes and Gaps ' can be invoked",
+                    IDC_STATIC,18,123,383,8
+    LTEXT           "any time to quickly remove clashes. Note that it is important to Freeze lectures which you do not want to move. This can",
+                    IDC_STATIC,18,136,383,8
+    LTEXT           "be done by Edit-->Freeze/Defreeze. Multiple cells can also be Freezed and DeFreezed. Also note that along with clashes",
+                    IDC_STATIC,18,148,383,8
+    LTEXT           "the same rotine removes the gaps and double lectures. Double lectures are spread over the week.",
+                    IDC_STATIC,18,160,383,8
+    LTEXT           "The Clash-Gap routine uses Brute-Force method so you may try to run it a few more times to see for any improvent over",
+                    IDC_STATIC,20,175,383,8
+    LTEXT           "the previous run. Do not forget to save the previous outcomes as you may prefer them instead of newer ones.",
+                    IDC_STATIC,20,186,383,8
+    LTEXT           "All the entries are to be done in MASTER. Other reports will be updated immediately. Entry is disabled in the right sheet.",
+                    IDC_STATIC,20,30,376,8
+    LTEXT           "In general, it is stongly recommended that you save your work periodically in different files with atleast one file per session.",
+                    IDC_STATIC,21,203,383,8
+    LTEXT           "Find and Replace : You can rectify input error by re-entering data in a cell. If the same changes are to be made for many",
+                    IDC_STATIC,22,219,383,8
+    LTEXT           "cells, use Edit-->Find and Replace. This will do all the changes in one pass.",
+                    IDC_STATIC,21,231,383,8
+    LTEXT           "Recess  :  The recess time will contain no lectures. If you want each teacher or class time table to have tag RECESS,",
+                    IDC_STATIC,22,246,383,8
+    LTEXT           "then enter as  //RECESS in the middle of time row say on WED or THU.",
+                    IDC_STATIC,21,258,383,8
+END
+
+IDD_EDITHELP DIALOG DISCARDABLE  0, 0, 423, 295
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Other Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Saving and Printing  :  The File Menu includes all the submenus for Saving, Opening and Printing. You can start a new ",
+                    IDC_STATIC,23,18,387,8
+    LTEXT           "time table by New command. This will make all the cells blank. All the present data will be lost. but it will not affect the",
+                    IDC_STATIC,24,29,387,8
+    LTEXT           "the data already saved in a file. You can start then a new time table and save the subsequent work using Save command.",
+                    IDC_STATIC,24,40,387,8
+    LTEXT           "There are printing options for Master, set of all Individuals (Teachers) and Set of all classes. But occationally you may",
+                    IDC_STATIC,24,60,387,8
+    LTEXT           "need a single report of a Teacher or Class. In that case the command 'Print Current Display' will print it. You need to",
+                    IDC_STATIC,24,72,387,8
+    LTEXT           "display it on the right sheet by Generate Button or display it by bringing cell pointer to appropriate cell..",
+                    IDC_STATIC,24,84,387,8
+    LTEXT           "Full Teacher Names  :  Teacher Names can be expanded any time using the menu command  Set ---> Full Names",
+                    IDC_STATIC,25,136,387,8
+    LTEXT           "Full names will be printed only in Teacher's time table and will not be used any where else.",
+                    IDC_STATIC,26,148,370,8
+    LTEXT           "Name of the Institution : Using the command  ' Set ---> College Name '  you can specify your School/College/Institute.",
+                    IDC_STATIC,25,102,387,8
+    LTEXT           "It will be printed as header in all types of reports.",
+                    IDC_STATIC,25,115,387,8
+    LTEXT           "Swap Teachers : You can interchange individual time tables of two teachers using  'Edit ---> Swap Teachers'",
+                    IDC_STATIC,26,166,370,8
+    LTEXT           "In the resulting dialog box type 2-letter code of both the teachers. Their individual time tables will be interchanged",
+                    IDC_STATIC,26,177,370,8
+    LTEXT           "instantly.",IDC_STATIC,26,189,370,8
+END
+
+IDD_TOOLSHELP DIALOG DISCARDABLE  0, 0, 419, 290
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wizard is a step by step guided routine to generate a time table from scratch. It is especially useful for people having",
+                    IDC_STATIC,22,19,364,8
+    LTEXT           "little knowledge of computers or people with very low typing speed. If you know the basic copy-paste functionality of",
+                    IDC_STATIC,22,31,364,8
+    LTEXT           "Wizard Step - I   :  In this step only time slots and classes are allocated. This wizard fills only first column of Master.",
+                    IDC_STATIC,24,62,357,8
+    LTEXT           "cells, you can generate new time table without using wizard in almost same amount of time.",
+                    IDC_STATIC,23,42,285,8
+    LTEXT           "Wizard Step - II  :  In this step you will specify SUB(TR) and number of lectures given for each class. After each entry",
+                    IDC_STATIC,25,79,366,8
+    LTEXT           "the wizard will distribute specified lectures to master at available empty cells. Note that clashes, gap and doubles are",
+                    IDC_STATIC,25,91,364,8
+    LTEXT           "totally ignored. Go on and fill up entries in Master for all the teachers.",
+                    IDC_STATIC,26,104,215,8
+    LTEXT           "The final step is to run the clash removing routine from the menu  Tools ---> Auto Reduce Clashes and Gaps.",
+                    IDC_STATIC,25,120,340,8
+END
+
+IDD_SETHELP DIALOG DISCARDABLE  0, 0, 421, 290
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "More Freeware"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "More Freeware by the same author...",IDC_STATIC,45,24,
+                    116,8
+    LTEXT           "1.  Set4  -  Paper Generator for all subjects with Question Bank and Online MCQ Tool.",
+                    IDC_STATIC,47,44,270,8
+    LTEXT           "2.  MarkList (JAVA) -  Easily create marksheets and prints them in various forms. It has MCQ assesment tool.",
+                    IDC_STATIC,48,60,338,8
+    LTEXT           "3.  MarkList (Android) -  Create marklist on your Android phone and print them. Assess MCQ papers on mobile.",
+                    IDC_STATIC,48,75,343,8
+    LTEXT           "4.  RSolve -  Rational Solver - Solve selected mathematical problems such as Inverse of a matrix.",
+                    IDC_STATIC,48,90,304,8
+    LTEXT           "5.  SupChart -  Automates Supervision Schedules",
+                    IDC_STATIC,48,105,156,8
+    LTEXT           "6.  ReFort -  MCQ paper Assesment using ADF Scanners.",
+                    IDC_STATIC,48,120,181,8
+    LTEXT           "Download From :  WWW.SITES.GOOGLE.COM/SITE/UTILITIESFORTEACHERS",
+                    IDC_STATIC,50,150,263,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CollegeTimeTable MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CollegeTimeTable\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CollegeTimeTable.EXE\0"
+            VALUE "ProductName", "CollegeTimeTable Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_COLLEGETIMETABLE_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 644
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 437
+    END
+
+    IDD_COLLEGENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SWAPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 22
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_MULTIDISABLEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_CONTINUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_WIZARD1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_WZARD2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_EXPNAMEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_QUICKSTART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_INRODUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_FILEHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_EDITHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_TOOLSHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_SETHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "CollegeTimeTable\n\nColleg\n\n\nCollegeTimeTable.Document\nColleg Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CollegeTimeTable"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Enable All Cells"
+    ID_FILE_OPEN            "Open a file"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOVE_UP              "Move one row Up"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_ENABLEALLCELLS  "Enable All Cells"
+    ID_TOOLS_TIMETABLEWIZARD "Wizard To Make New Time Table"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CollegeTimeTable.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
